@@ -56,7 +56,7 @@ router.put('/:id', (req, res) => {
   const modifyData = req.body
   const id = req.params.id
   return Restaurant.findByIdAndUpdate(id, modifyData)
-      .then(() => res.redirect(`/restaurants/${id}`))
+    .then(() => res.redirect(`/restaurants/${id}`))
 })
 //刪除資料
 router.delete('/:id', (req, res) => {
