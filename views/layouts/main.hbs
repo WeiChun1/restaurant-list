@@ -22,7 +22,12 @@
             width="30" height="30" class="d-inline-block align-top" alt="我的餐廳清單">
           我的餐廳清單
         </a>
-        <a class="btn btn-outline-light" href="/restaurants/new">Create</a>
+        <div>
+          <a class="btn btn-outline-light" href="/restaurants/new">Create</a>
+          {{#if user}}
+            <a class="btn btn-outline-light" href="/users/logout">Logout</a>
+          {{/if}}
+        </div>
       </div>
     </nav>
 
